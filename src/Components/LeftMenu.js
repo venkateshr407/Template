@@ -5,8 +5,6 @@ import youtube from '../Asset/Group 612.svg';
 import hero from '../Asset/Layer 2.svg';
 import Social from '../Components/SocialBox';
 import NotifyProps from '../Components/NotifyProps';
-
-// import Gragh from './ChartContainer';
 import account from '../Asset/account.svg';
 import friend from '../Asset/friend.svg';
 import insta from '../Asset/instagram-sketched (2).svg';
@@ -27,22 +25,22 @@ export default class LeftMenu extends Component {
         return (
             <>
                 <div className={styles.sideNavBar}>
-                <a href="#logo"><img src={Dashboard} alt="image" className={styles.Dashboards}/></a>
+                <a href="#logo"><img src={Dashboard}aria-hidden alt="image" className={styles.Dashboards}/></a>
 
-                    <a href="#daskboard"><img src={account} alt="image"/></a>
-                    <a href="#home"><img src={friend} alt="image"/></a>
-                    <a href="#about"><img src={gallery} alt="image"/></a>
-                    <a href="#Home"><img src={shoping} alt="image"/></a>
-                    <a href="#Home"><img src={video} alt="image"/></a>
-                    <a href="#Home"><img src={friend} alt="image"/></a>
+                    <a href="#daskboard"  target="#"><img src={account} aria-hidden alt="image"/></a>
+                    <a href="#home" target="#"><img src={friend} aria-hidden alt="image"/></a>
+                    <a href="#about" target="#"><img src={gallery} aria-hidden alt="image"/></a>
+                    <a href="#Home" target="#"><img src={shoping} aria-hidden alt="image"/></a>
+                    <a href="#Home" target="#"><img src={video} aria-hidden alt="image"/></a>
+                    <a href="#Home" target="#"><img src={friend} aria-hidden alt="image"/></a>
                 </div>
                 <div className={styles.contentArea}>
                 <div id="logo" className={styles.header}>
                         <div className={styles.headerContent}>
                             <div className={styles.headerItems}>
                                 <p>Join us</p>
-                                <img src={fb} alt="image"/>
-                                <img src={youtube} alt="image" />
+                                <img src={fb}aria-hidden alt="image"/>
+                                <img src={youtube}aria-hidden alt="image" />
                             </div>
                         </div>
                         <div className={styles.headerContent}>
@@ -51,13 +49,13 @@ export default class LeftMenu extends Component {
                         <div className={styles.headerContent}>
                             <div className={styles.headerUser}>
                                 <div className="dropdown show"> 
-                                    <img src={User} alt="image"/>
-                                        <a className="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <img src={User}aria-hidden alt="image"/>
+                                        <a target="#" className="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                             Sweetha Nair
                                         </a>
 
                                 <div className="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                    <a className="dropdown-item" href="#">Action</a>
+                                    <a className="dropdown-item" target="#" href="#">Action</a>
                                 </div>
                                 </div>
                             </div>
@@ -71,7 +69,7 @@ export default class LeftMenu extends Component {
                                     <p>Let's start and enjoy with our feature</p>
                                 </div>
                                 <div className={styles.heroItems}>
-                                    <img src={hero} alt="image"/>
+                                    <img src={hero}aria-hidden alt="image"/>
                                 </div>
                             </div>
                             <div className={styles.flexContents}>
@@ -105,7 +103,7 @@ export default class LeftMenu extends Component {
                                        <li style={{color:'#FF3A48'}}>YouTube</li>
                                        <li style={{color:'#D68FFF'}}>Instagram</li>
                                     </ul>
-                                    <img src={Graph} alt="image" className={styles.graphImage}/>
+                                    <img src={Graph}aria-hidden alt="image" className={styles.graphImage}/>
                                 </div>
 
                              {this.renderProps()}
@@ -120,9 +118,9 @@ export default class LeftMenu extends Component {
         return (
             <div className={social.notifyContents}>
                 <div className={social.notifyItems}>
-                    <img src={notify} alt="image"/>
+                    <img src={notify}aria-hidden alt="image"/>
                     <h4>Notification</h4>
-                    <img src={more} alt="image"/>
+                    <img src={more}aria-hidden alt="img"/>
                 </div>
                 <NotifyProps image={facebook} day="Today" time="11:20AM" heading="Hello World" paragraph="Liked your Post" />
                 <NotifyProps image={youtube1} day="Yesterday" time="01:24PM" heading="Subscribe" paragraph="Liked your Post" />

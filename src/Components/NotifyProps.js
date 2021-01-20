@@ -7,7 +7,7 @@ export default class NotifyProps extends Component {
                 <div className={social.notifyData}>
                     <div className={social.cardBG}>
                         <div className={social.cardContent}>
-                            <img src={this.props.image} alt="image"/>
+                            <img src={this.props.image}aria-hidden alt="image"/>
                             <h6>{this.props.day}</h6>
                             <h6>{this.props.time}</h6>                        
                         </div>
